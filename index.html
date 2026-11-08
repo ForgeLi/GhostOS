@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GhostOS 1.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wallpaper" id="wallpaper"></div>
+<section id="boot"><div class="bootbox"><div class="ghostmark"></div><div class="bootname">GHOST<span>OS</span></div><div class="bootline"></div><div style="font-size:11px;color:#9aa8c4;letter-spacing:2px">INITIALIZING GHOST CORE</div></div></section>
+<section id="login" class="hidden"><div class="loginbox"><div class="ghostmark"></div><h1>GHOSTOS</h1><p>Welcome back. Sign in to your gaming space.</p><input id="username" class="field" maxlength="18" placeholder="Enter player name" autocomplete="username"><button class="primary" id="loginBtn">ENTER GHOSTOS →</button><div class="hint">Local demo profile · No password required</div></div></section>
+<div id="desktop" class="hidden">
+<header class="topbar"><div class="brand"><div class="mini-ghost"></div> GHOST<span>OS</span></div><div class="status"><span class="online">● SYSTEM ONLINE</span><span>GHOST CORE 1.1</span><span id="topUser">PLAYER</span></div></header>
+<div class="layout"><aside class="sidebar"><div class="side-label">COMMAND</div>
+<button class="nav active" data-page="Home"><b>⌂</b> Home</button><button class="nav" data-page="Library"><b>▣</b> Game Library</button><button class="nav" data-page="Store"><b>◇</b> App Center</button><button class="nav" data-page="Wallpapers"><b>▧</b> Wallpapers</button><button class="nav" data-page="Performance"><b>⌁</b> Performance</button><div class="side-label">SYSTEM</div><button class="nav" data-page="Settings"><b>⚙</b> Settings</button>
+</aside><main class="main" id="main"></main></div>
+<footer class="bottom"><div class="dock"><button title="Home" onclick="showPage('Home')">⌂</button><button title="Library" onclick="showPage('Library')">▣</button><button title="App Center" onclick="showPage('Store')">◇</button><button title="Settings" onclick="showPage('Settings')">⚙</button></div><div class="clock"><span id="time">--:--</span><small id="date"></small></div></footer></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
